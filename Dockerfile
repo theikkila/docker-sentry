@@ -11,9 +11,6 @@ RUN apt-get install -y openssh-server git-core libxml2-dev curl python build-ess
 RUN apt-get install -y mysql-client
 RUN apt-get install -y libmysqlclient-dev
 
-RUN wget http://python-distribute.org/distribute_setup.py 
-RUN python distribute_setup.py
-
 RUN wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py 
 RUN python get-pip.py
 
