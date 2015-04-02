@@ -1,8 +1,4 @@
-FROM ubuntu
-
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get upgrade -y
+FROM dockerfile/python
 
 RUN apt-get install -y language-pack-en
 ENV LANGUAGE en_US.UTF-8
