@@ -26,6 +26,7 @@ RUN python get-pip.py
 
 RUN pip install psycopg2
 RUN pip install sentry
+RUN pip install sentry-slack
 RUN pip install MySQL-python
 
 EXPOSE 9000
