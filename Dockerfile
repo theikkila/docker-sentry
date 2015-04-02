@@ -7,7 +7,7 @@ ENV LC_ALL en_US.UTF-8
 RUN locale-gen en_US.UTF-8
 RUN dpkg-reconfigure locales
 
-RUN apt-get install -y openssh-server git-core libxml2-dev curl python build-essential make gcc python-dev wget
+RUN apt-get install -y openssh-server git-core libxml2-dev curl python build-essential make gcc python-dev wget libffi-dev
 RUN apt-get install -y mysql-client
 RUN apt-get install -y libmysqlclient-dev
 
