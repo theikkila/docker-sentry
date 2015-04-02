@@ -14,7 +14,6 @@ RUN apt-get install -y libmysqlclient-dev
 RUN wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py 
 RUN python get-pip.py
 
-RUN pip install psycopg2
 RUN pip install sentry
 RUN pip install sentry-slack
 RUN pip install MySQL-python
