@@ -10,6 +10,7 @@ RUN dpkg-reconfigure locales
 RUN apt-get install -y openssh-server git-core libxml2-dev curl python build-essential make gcc python-dev wget libffi-dev libssl-dev
 RUN apt-get install -y mysql-client
 RUN apt-get install -y libmysqlclient-dev
+RUN apt-get install -y libxml2-dev libxslt1-dev 
 
 RUN wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py 
 RUN python get-pip.py
