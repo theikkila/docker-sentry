@@ -40,6 +40,7 @@ SENTRY_WEB_OPTIONS = {
     'workers': 3,  # the number of gunicorn workers
     'secure_scheme_headers': {'X-FORWARDED-PROTO': 'https'},  # detect HTTPS mode from X-Forwarded-Proto header
 }
+SENTRY_CACHE = 'sentry.cache.django.DjangoCache'
 
 # Mail server configuration
 
