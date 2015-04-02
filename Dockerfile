@@ -1,6 +1,5 @@
 FROM dockerfile/python
-
-RUN apt-get install -y language-pack-en
+RUN apt-get update
 ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
