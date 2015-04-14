@@ -1,4 +1,4 @@
-FROM dockerfile/python
+FROM python:3
 RUN apt-get update
 ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
