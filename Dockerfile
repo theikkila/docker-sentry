@@ -1,10 +1,14 @@
-FROM ubuntu:trusty
+FROM python:2.7
 RUN apt-get update
 
-RUN apt-get install -y openssh-server git-core libxml2-dev curl python build-essential make gcc python-dev wget libffi-dev libssl-dev
+RUN pip install -U wheel pip setuptools
+
+RUN apt-get -qq update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q libxslt1-dev libxml2-dev libpq-dev expect libsasl2-dev libssl-dev
+
 RUN apt-get install -y mysql-client
 RUN apt-get install -y libmysqlclient-dev
-RUN apt-get install -y libxml2-dev libxslt1-dev
+RUN apt-get install -y wget
+
 
 RUN pip install sentry
 RUN pip install sentry-slack
