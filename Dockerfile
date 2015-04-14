@@ -1,11 +1,5 @@
-FROM python:3
+FROM ubuntu:trusty
 RUN apt-get update
-ENV LANGUAGE en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LC_ALL en_US.UTF-8
-
-RUN locale-gen en_US.UTF-8
-RUN dpkg-reconfigure locales
 
 RUN apt-get install -y openssh-server git-core libxml2-dev curl python build-essential make gcc python-dev wget libffi-dev libssl-dev
 RUN apt-get install -y mysql-client
