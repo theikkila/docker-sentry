@@ -1,4 +1,4 @@
-FROM python:3
+FROM ubuntu:trusty
 RUN apt-get update
 
 RUN apt-get install -y openssh-server git-core libxml2-dev curl python build-essential make gcc python-dev wget libffi-dev libssl-dev
