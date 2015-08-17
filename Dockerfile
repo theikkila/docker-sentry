@@ -19,6 +19,7 @@ EXPOSE 9000
 
 ADD sentry.conf.py /sentry.conf.py
 ADD supervisor-app.conf /etc/supervisor/conf.d/supervisor-app.conf
+RUN useradd sentry
 #ADD admin_user.json /initial_data.json
 
 CMD ["supervisord", "-n"]
